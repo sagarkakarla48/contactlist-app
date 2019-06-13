@@ -19,7 +19,6 @@ var contactSchema=mongoose.Schema({
 var Contact=module.exports=mongoose.model("contact",contactSchema);
 
 module.exports.getContacts=function(callback){
-console.log("Test");
 Contact.find(callback)
 }
 
