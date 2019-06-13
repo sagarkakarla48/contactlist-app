@@ -12,7 +12,6 @@ refresh();
 $scope.addContact=function(){
 	$http.post("/contactList",$scope.contact).success(function(response){
 		console.log(response);
-		console.log("Test");
 		refresh();
 	})
 }
